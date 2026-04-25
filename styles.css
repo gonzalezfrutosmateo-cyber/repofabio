@@ -4,8 +4,10 @@
 h1 {
   text-align: center;
 }
+body {
+  background-color: #f0f0f0;
+}
 .titulo {
-  
 .truculenta-<uniquifier> {
   font-family: "Truculenta", sans-serif;
   font-optical-sizing: auto;
@@ -13,6 +15,7 @@ h1 {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+}
 }
 .titulo2 {
   .changa-one-regular {
