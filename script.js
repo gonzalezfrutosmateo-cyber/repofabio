@@ -1,3 +1,16 @@
+let alumnos = [];
+const resultado = document.getElementById("resultado");
+
+document.getElementById("btnAgregar").addEventListener("click", agregar);
+document.getElementById("btnMostrar").addEventListener("click", mostrarTodo);
+document.getElementById("btnLimpiar").addEventListener("click", limpiarTodo);
+document.getElementById("btnBorrarNombre").addEventListener("click", borrarNombre);
+document.getElementById("btnBuscarNombre").addEventListener("click", buscarNombre);
+document.getElementById("btnBuscarApellido").addEventListener("click", buscarApellido);
+document.getElementById("btnBuscarMateria").addEventListener("click", buscarMateria);
+document.getElementById("btnBuscarAprobados").addEventListener("click", buscarAprobados);
+document.getElementById("btnBuscarDesaprobados").addEventListener("click", buscarDesaprobados);
+
 function mostrarAlumnos(lista, titulo) {
     if (lista.length === 0) {
         resultado.innerHTML = `<p>No se encontraron alumnos.</p>`;
@@ -98,15 +111,5 @@ function buscarDesaprobados() {
     mostrarAlumnos(desaprobados, "Alumnos desaprobados (promedio < 7)");
 }
 
-let alumnos = [];
-const resultado = document.getElementById("resultado");
 
-document.getElementById("btnAgregar").addEventListener("click", agregar);
-document.getElementById("btnMostrar").addEventListener("click", mostrarTodo);
-document.getElementById("btnLimpiar").addEventListener("click", limpiarTodo);
-document.getElementById("btnBorrarNombre").addEventListener("click", borrarNombre);
-document.getElementById("btnBuscarNombre").addEventListener("click", buscarNombre);
-document.getElementById("btnBuscarApellido").addEventListener("click", buscarApellido);
-document.getElementById("btnBuscarMateria").addEventListener("click", buscarMateria);
-document.getElementById("btnBuscarAprobados").addEventListener("click", buscarAprobados);
-document.getElementById("btnBuscarDesaprobados").addEventListener("click", buscarDesaprobados);
+
