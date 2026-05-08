@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ingreso de notas</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1 class="titulo">hola</h1>
-        <h1 class="titulo2">mundo</h1>
+        <h1 class="titulo">Sistema de ingreso y busqueda de notas</h1>
     </header>
     <section>
-        <input type="text" id="txtNom" placeholder="Ingrese su nombre">
-        <input type="text" id="txtMat"" placeholder="Ingrese su materia">
-        <label>Primera nota!</label>
-        <input type="number" id="numNota1" placeholder="" min="1" max="10" step="1">
-        <label>Segunda nota!</label>
-        <input type="number" id="numNota2" placeholder="" min="1" max="10" step="1">
-        <label>Tercera nota!</label>
-        <input type="number" id="numNota3" placeholder="" min="1" max="10" step="1">
-        <button id="btnAgregar">Agregar</button>
-        <button id="btnMostrar">Mostrar Todo</button>
+        <div class="datos">
+            <input class="dato" type="text" id="txtNom" placeholder="Ingrese su Nombre">
+            <input class="dato" type="text" id="txtAlum" placeholder="Ingrese su Apellido">
+            <input class="dato" type="text" id="txtMat" placeholder="Ingrese su Materia">
+        </div>
+        <br>
+        <div class="notas">
+            <div class="nota-grupo">
+                <label class="dato">1º Nota:</label>
+                <input class="dato" type="number" id="numNota1" min="1" max="10" step="1">
+            </div>
+            <div class="nota-grupo">
+                <label class="dato">2º Nota:</label>
+                <input class="dato" type="number" id="numNota2" min="1" max="10" step="1">
+            </div>
+            <div class="nota-grupo">
+                <label class="dato">3º Nota:</label>
+                <input class="dato" type="number" id="numNota3" min="1" max="10" step="1">
+            </div>
+        </div>
+        <br>
+        <div class="botones">
+            <button class="btn" id="btnAgregar">Agregar Alumno</button>
+            <button class="btn" id="btnMostrar">Mostrar Todo</button>
+            <button class="btn" id="btnLimpiar">Limpiar Todo</button>
+            <button class="btn" id="btnBorrarNombre">Borrar por Nombre</button>
+            <button class="btn" id="btnBuscarNombre">Buscar por Nombre</button>
+            <button class="btn" id="btnBuscarApellido">Buscar por Apellido</button>
+            <button class="btn" id="btnBuscarMateria">Buscar por Materia</button>
+            <button class="btn" id="btnBuscarAprobados">Buscar Aprobados (≥7)</button>
+            <button class="btn" id="btnBuscarDesaprobados">Buscar Desaprobados (<7) </button>
+        </div>
     </section>
-    <footer>
+    <div id="resultado"></div>
+    <footer class="footer">
         <h4>Diseñado por Mateo Gonzalez Frutos</h4>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,29 +1,92 @@
-* {margin: 0;
+* {
+  margin: 0;
   padding: 0;
 }
-h1 {
-  text-align: center;
-}
+
 body {
   background-color: #f0f0f0;
 }
+
+h1 {
+  text-align: center;
+}
+
 .titulo {
-.truculenta-<uniquifier> {
-  font-family: "Truculenta", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-}
-.titulo2 {
-  .changa-one-regular {
-  font-family: "Changa One", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-
+.footer {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: bottom;
+  justify-content: center;
+  margin-top: 5%;
 }
 
+.datos {
+  display: flex;
+  align-items: bottom;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.notas {
+  display: flex;
+  align-items: bottom;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  color: black;
+  border: solid black 2px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  background-color: #d0d0d0;
+  transform: scale(1.05);
+}
+
+.dato {
+  margin: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.nota-grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+#resultado {
+  font-family: "Raleway", sans-serif;
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 0 20px;
+}
